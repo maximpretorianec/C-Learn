@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstStep
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int countImagesInLine = 3;
+            int countImages = 55;
+            int countImagesFullLine = countImages / countImagesInLine;
+            int countImagesOverLimit = countImages % countImagesInLine;
+            Console.WriteLine("Количество полностью заполненных рядов картинками будет: " +
+                countImagesFullLine + ". Сверх меры: " + countImagesOverLimit + ".");
+            Console.ReadLine();
+        }
+    }
+}
